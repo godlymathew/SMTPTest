@@ -8,7 +8,7 @@ SMTPTest is a small application, which can test smtp configuration and test send
 
 ### Framework
 
-SMTPTest is an application framework built on ASP.net 4.5.
+SMTPTest application built on ASP.net 4.5.
 
 ### Application Type
 Windows Form
