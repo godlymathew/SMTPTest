@@ -158,9 +158,9 @@
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
             this.label1.Location = new System.Drawing.Point(251, 249);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 12);
+            this.label1.Size = new System.Drawing.Size(75, 12);
             this.label1.TabIndex = 39;
-            this.label1.Text = "Copy Rights @ Godly-OASYS";
+            this.label1.Text = "Copy Rights @ {}";
             // 
             // PgBar
             // 
