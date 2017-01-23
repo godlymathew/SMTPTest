@@ -41,11 +41,16 @@ namespace SMTPTester
                 message.Body = "<h2>Hi, Greetings from ....</h2><br /> <div style=\"color:green\">{content}</div><hr />";
                 message.IsBodyHtml = true;
                 client.Send(message);
-                MessageBox.Show("Mail Sent", "Godly Says:)", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Mail Sent", "OASYS Says:)", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Mail not Sent!.\n" + ex.Message, "Godly Says :)", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                string error = "";
+                if (ex.InnerException != null)
+                {
+                    error = ex.InnerException.Message;
+                }
+                MessageBox.Show("Mail not Sent!.\n" + ex.Message + "\n" + error, "OASYS Says :)", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             finally
             {

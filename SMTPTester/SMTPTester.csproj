@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMTPTestClient.cs" />
     <EmbeddedResource Include="FrmSMTPTest.resx">
       <DependentUpon>FrmSMTPTest.cs</DependentUpon>
     </EmbeddedResource>
